@@ -18,7 +18,7 @@ a:link {
 .header {
     display: flex;
     background-color: #1F2937;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -26,14 +26,14 @@ a:link {
     color: #F9FAF8;
     font-size: 24px;
     font-weight: bolder;
-    margin: 1em 48px 0;
-    flex: auto;
+    padding: 1em 0 0 172px;
+    max-width: 400px;
 }
 
 .header ul {
     display: flex;
     gap: 24px;
-    margin: 1em 48px 0;
+    padding: 1em 172px 0 0;
 }
 
 .header li {
@@ -51,22 +51,26 @@ a:link {
     display: flex;
     flex: 1;
     background-color: #1F2937;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 48px;
+    gap: 86px;
+    padding: 86px 172px;
 }
 
 .intro-and-signup {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 350px;
+    max-width: 400px;
+    flex: 1;
+    gap: 8px;
 }
 
 .intro-title {
     font-size: 48px;
     font-weight: bolder;
     color: #F9FAF8;
+    flex: 1;
 }
 
 .intro-subtext {
@@ -76,14 +80,29 @@ a:link {
 
 .title-signup-button {
     background-color: #3882f6;
+    border-radius: 8px;
+    font-size: 18px;
+    max-width: 150px;
+    padding: 4px;
+}
+
+.title-signup-button a {
+    color: #F9FAF8;
+    font-weight: bold;
 }
 
 .image-card {
+    max-width: 300px;
     display: flex;
-    background-color: #e5e7eb52;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 75px;
+    background-color: #9093999c;
 }
 
 .intro-image {
-    background-color: #e5e7eb52;
     color: #F9FAF8;
+    flex: 1;
 }
